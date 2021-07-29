@@ -41,6 +41,7 @@ export function initRouter(container: Element) {
     }
   }
 
+  location.pathname.replace("/piedra-papel-o-tijera", "");
   if (location.pathname == "/") {
     goTo("/home");
   }
