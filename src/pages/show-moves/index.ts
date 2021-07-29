@@ -76,7 +76,6 @@ export function initShowMoves(param) {
   showContainer.appendChild(style);
 
   setTimeout(() => {
-    console.log(state.whoWins(playerMove, computerMove));
     const resultStats = document.createElement("div");
     resultStats.style.display = "grid";
     resultStats.style.justifyItems = "center";

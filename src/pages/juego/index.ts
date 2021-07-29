@@ -16,7 +16,6 @@ export function initJuego(param) {
     counter--;
     if (counter < 0) {
       clearInterval(intervalo);
-      console.log(state.getState());
       processGame();
     }
   }, 1000);
