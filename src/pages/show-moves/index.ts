@@ -80,6 +80,7 @@ export function initShowMoves(param) {
     resultStats.style.display = "grid";
     resultStats.style.justifyItems = "center";
     resultStats.style.gap = "20px";
+    const style = document.createElement("style");
 
     resultStats.innerHTML = `
       <result-comp label="${result}"></result-comp>
@@ -96,7 +97,17 @@ export function initShowMoves(param) {
       param.goTo("/comenzar");
     });
     resultStats.appendChild(volverButton);
+    style.innerHTML = `
+      .icono-computer,
+      .icono-player {
+        opacity: 0.5;
+      }
+      .show-container {
+        background-color: red;
+      }
+    `;
 
+    showContainer.appendChild(style);
     showContainer.appendChild(resultStats);
   }, 2500);
 
