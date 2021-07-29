@@ -9,6 +9,7 @@ import "./components/score";
 import "./components/result";
 
 function main() {
+  console.log(location.pathname);
   state.init();
   initRouter(document.querySelector(".root"));
 }

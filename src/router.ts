@@ -23,6 +23,8 @@ const routes = [
 ];
 
 export function initRouter(container: Element) {
+  history.pushState({}, "", "/home");
+
   function goTo(path) {
     history.pushState({}, "", path);
     handleRoute(path);
@@ -41,7 +43,6 @@ export function initRouter(container: Element) {
     }
   }
 
-  location.pathname.replace("/piedra-papel-o-tijera", "");
   if (location.pathname == "/") {
     goTo("/home");
   }
