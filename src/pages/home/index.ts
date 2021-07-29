@@ -54,7 +54,8 @@ export function initHome(param) {
       margin: 25px auto 25px; 
     }
     .title-container {
-      margin-top: 100px;
+      margin-top: 15px;
+      px;
       font-family: "American Typewriter";
     }
     .title {

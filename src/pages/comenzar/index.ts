@@ -57,7 +57,7 @@ export function initComenzar(param) {
       margin: 25px auto 25px; 
     }
     .descripcion-container {
-      margin-top: 100px;
+      margin-top: 15px;
       font-family: "American Typewriter";
     }
     .instructions {
